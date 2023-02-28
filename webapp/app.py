@@ -7,4 +7,4 @@ def hello_world():
     return "<p>Hello, World!</p>"
 @app.route("/reset")
 def reset():
-    return "<p>Hello, World!</p>"
+    return "<p>Alaphelyzetbe állítás</p>"
