@@ -24,4 +24,7 @@ def hello_world():
     return szoveg
 @app.route("/reset")
 def reset():
-    return "<p>Alaphelyzetbe állítás</p>"
+    f = open(path, "w")
+    f.write("0")
+    f.close()
+    return "<p>A számlálót alaphelyzetbe állítottam</p>"
