@@ -19,7 +19,9 @@ def hello_world():
     x += 1
     f = open(path,"w")
     f.write(str(x))
-    return "<p>Hello, World!</p>"
+    f.close()
+    szoveg = "A weboldalt " + str(x) + " alkalommal nyitották meg."
+    return szoveg
 @app.route("/reset")
 def reset():
     return "<p>Alaphelyzetbe állítás</p>"
